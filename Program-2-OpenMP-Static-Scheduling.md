@@ -18,7 +18,7 @@ int main(void) {
 
     #pragma omp parallel for schedule(static, 2)
     for (int i = 0; i < n; i++) {
-        printf("Thread %d executes iteration %d\\n", omp_get_thread_num(), i);
+        printf("Thread %d executes iteration %d\n", omp_get_thread_num(), i);
     }
     return 0;
 }
